@@ -1,9 +1,11 @@
 {% assign feature_text = page.feature_text %}
 {% assign feature_image = page.feature_image %}
+{% assign feature_video = page.feature_video %}
 {% if page.collectionpage %}
   {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
   {% assign feature_text = collectiondata.feature_text %}
   {% assign feature_image = collectiondata.feature_image %}
+  {% assign feature_video = collectiondata.feature_video %}
 {% endif %}
 
 {% if feature_text or feature_image %}
@@ -11,5 +13,12 @@
     <div class="container  typeset">
       {{ feature_text | markdownify }}
     </div>
+  </div>
+{% elsif feature_video %}
+  <div class="feature">
+    <video controls autoplay>
+      <source src="{{ feature_video }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 {% endif %}

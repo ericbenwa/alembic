@@ -1,12 +1,14 @@
 ---
 title: Boston 3D Virtual Tours
-feature_text: |
-  ## Virtual tours for residential and commercial properties.
-  [Schedule your virtual tour photoshoot today!](/contact/)
-feature_image: "assets/homepage_banner.jpg"
+feature_text: 
+feature_image: 
+feature_video: "assets/virtual-tour-preview.mov"
 excerpt: ""
 layout: page
 ---
+
+Virtual tours for residential and commercial properties.
+  [Schedule your virtual tour photoshoot today!](/contact/)
 
 (show example)
 
